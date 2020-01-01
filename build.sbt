@@ -18,7 +18,7 @@ lazy val root = (project in file("."))
     libraryDependencies ++= List(
       scalaTest.map(_%Test),
       scalaMock.map(_%Test),
-      akkaHttp,
+      akka,
       cats,
       circe,
       guice,

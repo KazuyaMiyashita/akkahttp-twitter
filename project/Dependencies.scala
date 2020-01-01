@@ -3,7 +3,10 @@ import sbt._
 object Dependencies {
   lazy val scalaTest = "org.scalatest" %% "scalatest" % "3.0.8" :: Nil
   lazy val scalaMock = "org.scalamock" %% "scalamock" % "4.4.0" :: Nil
-  lazy val akkaHttp = "com.typesafe.akka" %% "akka-http" % "10.1.11" :: Nil
+  lazy val akka = 
+    "com.typesafe.akka" %% "akka-actor-typed" % "2.6.1" ::
+    "com.typesafe.akka" %% "akka-stream-typed" % "2.6.1" ::
+    "com.typesafe.akka" %% "akka-http" % "10.1.11" :: Nil
   lazy val cats = 
     "org.typelevel" %% "cats-core" % "2.0.0" ::
     "org.typelevel" %% "cats-effect" % "2.0.0" :: Nil
